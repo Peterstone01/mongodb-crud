@@ -25,7 +25,7 @@ const Table = () => {
   return (
     <div className="my-5">
       {/* //////////////////table header */}
-      <div className="grid px-5 grid-cols-11 gap-4 font-bold  bg-green-500">
+      <div className="lg:grid px-5 lg:grid-cols-11 gap-4 font-bold  bg-green-500">
         <div className="col-span-1   ">
           <h1 className="font-bold  text-white  text-lg">Index</h1>
         </div>
@@ -48,7 +48,7 @@ const Table = () => {
         {man?.map((item, i) => (
           <div
             key={i}
-            className="grid px-5 grid-cols-11 gap-4 font-bold hover:bg-green-500 transition hover:text-white  bg-gray-100 py-2 my-2 "
+            className="lg:grid px-5 lg:grid-cols-11 gap-4 font-bold hover:bg-green-500 transition hover:text-white  bg-gray-100 py-2 my-2 "
           >
             <div className="col-span-1   ">
               <h1 className="">{i + 1}</h1>
