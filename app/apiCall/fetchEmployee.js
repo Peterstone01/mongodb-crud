@@ -1,7 +1,10 @@
 export const fetchEmployee = async () => {
-  const response = await fetch("https://mongodb-crud-kri1.vercel.app/", {
-    cache: "no-store",
-  });
+  const response = await fetch(
+    "https://mongodb-crud-kri1.vercel.app/api/employee",
+    {
+      cache: "no-store",
+    }
+  );
   const data = await response.json();
   console.log(data);
   if (error) {
