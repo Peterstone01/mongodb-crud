@@ -25,7 +25,7 @@ const Table = () => {
   return (
     <div className="my-5">
       {/* //////////////////table header */}
-      <div className="lg:grid px-5 lg:grid-cols-11 gap-4 font-bold  bg-green-500">
+      <div className=" hidden lg:grid px-5 lg:grid-cols-11 gap-4 font-bold  bg-green-500">
         <div className="col-span-1   ">
           <h1 className="font-bold  text-white  text-lg">Index</h1>
         </div>
@@ -53,13 +53,16 @@ const Table = () => {
             <div className="col-span-1   ">
               <h1 className="">{i + 1}</h1>
             </div>
-            <div className="col-span-3   ">
+            <div className="col-span-3  flex justify-start items-center space-x-2  ">
+              <p>Name:</p>
               <h1 className="">{item.name}</h1>
             </div>
-            <div className="col-span-3   ">
+            <div className="col-span-3 flex justify-start items-center space-x-2   ">
+              <p>Email:</p>
               <h1 className="">{item.email}</h1>
             </div>
-            <div className="col-span-2   ">
+            <div className="col-span-2 flex justify-start items-center space-x-2   ">
+              <p>Salary:</p>
               <h1 className="">${item.salary}</h1>
             </div>
 
