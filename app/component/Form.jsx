@@ -14,13 +14,16 @@ const Form = ({ name, salary, id, email }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:3000/api/employee/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({ newName, newEmail, newSalary }),
-      });
+      const response = await fetch(
+        `https://mongodb-crud-kri1.vercel.app/api/employee/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({ newName, newEmail, newSalary }),
+        }
+      );
       if (!response.ok) {
         throw new Error("failed to update");
       }
