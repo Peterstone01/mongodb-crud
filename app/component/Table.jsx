@@ -1,11 +1,8 @@
 "use client";
 import Link from "next/link";
 import Button from "../component/Button";
-import { employee } from "./constant/employee";
 import { Pencil, Trash2 } from "lucide-react";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { fetchEmployee } from "../apiCall/fetchEmployee";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 const Table = () => {
@@ -55,15 +52,15 @@ const Table = () => {
             </div>
             <div className="col-span-3  flex justify-start items-center space-x-2  ">
               <p>Name:</p>
-              <h1 className="">{item.name}</h1>
+              <h1 className=" text-sm lg:text-lg">{item.name}</h1>
             </div>
             <div className="col-span-3 flex justify-start items-center space-x-2   ">
               <p>Email:</p>
-              <h1 className="">{item.email}</h1>
+              <h1 className="text-sm lg:text-lg">{item.email}</h1>
             </div>
             <div className="col-span-2 flex justify-start items-center space-x-2   ">
               <p>Salary:</p>
-              <h1 className="">${item.salary}</h1>
+              <h1 className="text-sm lg:text-lg">${item.salary}</h1>
             </div>
 
             <div className="col-span-1  mx-2 flex justify-start items-center   ">

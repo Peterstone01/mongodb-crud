@@ -10,7 +10,9 @@ export default function Home() {
   connectMongoDB();
   return (
     <div className="px-2 lg:px-10 xl:px-14 py-5">
-      <h1 className=" text-2xl font-bold text-center">Employee Management</h1>
+      <h1 className=" text-2xl font-bold text-center my-4">
+        Employee Management
+      </h1>
       <div>
         <Link
           href="/add"
