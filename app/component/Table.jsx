@@ -14,7 +14,9 @@ const Table = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/employee", { catche: "no-store" })
+      .get("https://mongodb-crud-kri1.vercel.app/api/employee", {
+        catche: "no-store",
+      })
       .then((response) => setMan(response.data.data));
     router.refresh();
   }, []);
