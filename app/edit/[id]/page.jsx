@@ -3,9 +3,12 @@ import Form from "../../component/Form";
 
 const getEmployeeById = async (id) => {
   try {
-    const response = await fetch(`http://localhost:3000/api/employee/${id}`, {
-      cache: "no-store",
-    });
+    const response = await fetch(
+      `https://mongodb-crud-kri1.vercel.app/api/employee/${id}`,
+      {
+        cache: "no-store",
+      }
+    );
     return response.json();
   } catch (error) {
     console.log(error);

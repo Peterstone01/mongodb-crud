@@ -8,7 +8,7 @@ const Button = ({ id }) => {
     const confirmed = confirm("Are you Sure?");
     if (confirmed) {
       const response = await fetch(
-        `http://localhost:3000/api/employee?id=${id}`,
+        `https://mongodb-crud-kri1.vercel.app/api/employee?id=${id}`,
         {
           method: "DELETE",
         }
